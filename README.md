@@ -4,7 +4,7 @@ Xmodel_VLM: A Simple Baseline for Multimodal Vision Language Model
 
 <h5 align="center">
 
-[![hf_space](https://img.shields.io/badge/🤗-MTGV%20HuggingFace-blue.svg)]()
+[![hf_space](https://img.shields.io/badge/🤗-Xiaoduo%20HuggingFace-blue.svg)]()
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)]()
 [![github](https://img.shields.io/badge/-Github-black?logo=github)]()[![github](https://img.shields.io/github/)](https://github.com/)  
 
