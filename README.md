@@ -18,7 +18,7 @@ Xmodel_VLM: A Simple Baseline for Multimodal Vision Language Model
 
 1. Clone this repository and navigate to MobileVLM folder
    ```bash
-   git clone https://github.com/
+   git clone [https://github.com/](https://github.com/XiaoduoAILab/XmodelVLM.git)
    cd xmodelvlm
    ```
 
