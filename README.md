@@ -70,8 +70,40 @@ Please firstly download MobileLLaMA chatbot checkpoints from [huggingface websit
 
 #### 2️⃣ Prepare data
 
-#### 3️⃣ Run everything with one click!
+- prepare benchmark data
+  - We evaluate models on a diverse set of 6 benchmarks, *i.e.* GQA, MMBench, MMBench-cn, MME, POPE, SQA, TextVQA, VizWiz, MM-Vet.  For example, you should follow these instructions to manage the datasets:
+  - <details>
+    <summary> Data Download Instructions </summary>
 
+    - download some useful [data/scripts](https://github.com/Meituan-AutoML/MobileVLM/releases/download/v0.1/benchmark_data.zip) pre-collected by us.
+      - `unzip benchmark_data.zip && cd benchmark_data`
+      - `bmk_dir=${work_dir}/data/benchmark_data`
+    - gqa
+      - download its image data following the official instructions [here](https://cs.stanford.edu/people/dorarad/gqa/download.html)
+      - `cd ${bmk_dir}/gqa && ln -s /path/to/gqa/images images`
+    - mme
+      - download the data following the official instructions [here](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation).
+      - `cd ${bmk_dir}/mme && ln -s /path/to/MME/MME_Benchmark_release_version images`
+    - pope
+      - download coco from POPE following the official instructions [here](https://github.com/AoiDragon/POPE/tree/e3e39262c85a6a83f26cf5094022a782cb0df58d/output/coco).
+      - `cd ${bmk_dir}/pope && ln -s /path/to/pope/coco coco && ln -s /path/to/coco/val2014 val2014`
+    - sqa
+      - download images from the `data/scienceqa` folder of the ScienceQA [repo](https://github.com/lupantech/ScienceQA).
+      - `cd ${bmk_dir}/sqa && ln -s /path/to/sqa/images images`
+    - textvqa
+      - download images following the instructions [here](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip).
+      - `cd ${bmk_dir}/textvqa && ln -s /path/to/textvqa/train_images train_images`
+    - mmbench
+      - no action is needed.
+
+    </details>
+
+
+#### 3️⃣ Run everything with one click!
+We provide detailed pre-training, fine-tuning and testing shell scripts, for example:
+```shell
+bash xmodel_vlm0/scripts/pretrain.sh 0,1,2,3 
+'''
 
 ## 🤝 Acknowledgments
 
@@ -82,7 +114,7 @@ Please firstly download MobileLLaMA chatbot checkpoints from [huggingface websit
 
 If you find Xmodel_VLM useful in your research or applications, please consider giving a star ⭐ and citing using the following BibTeX:
 
-'''
+```
 @misc{xu2024xmodelvlm,
       title={Xmodel-VLM: A Simple Baseline for Multimodal Vision Language Model}, 
       author={Wanting Xu and Yang Liu and Langping He and Xucheng Huang and Ling Jiang},
@@ -91,4 +123,4 @@ If you find Xmodel_VLM useful in your research or applications, please consider 
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
-'''
+```
