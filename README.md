@@ -46,6 +46,7 @@ The overall architecture of our network, closely mirrors that of LLaVA-1.5. It c
 * a vision encoder (CLIP ViT-L/14)
 * a lightweight languagemodel (LLM)
 * a projector responsible for aligning the visual and textual spaces (XDP)
+  
 Refer to [our paper](https://arxiv.org/pdf/2405.09215) for more details!  
 ![assets/model archtecture.jpeg](https://github.com/XiaoduoAILab/XmodelVLM/blob/main/assets/model%20archtecture.jpeg)  
 ![assets/XDP.jpeg](https://github.com/XiaoduoAILab/XmodelVLM/blob/main/assets/XDP.jpeg)
