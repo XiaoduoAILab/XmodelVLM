@@ -102,8 +102,8 @@ Please firstly download MobileLLaMA chatbot checkpoints from [huggingface websit
 #### 3️⃣ Run everything with one click!
 We provide detailed pre-training, fine-tuning and testing shell scripts, for example:
 ```shell
-bash xmodel_vlm0/scripts/pretrain.sh 0,1,2,3 
-'''
+bash scripts/pretrain.sh 0,1,2,3  #GPU:0,1,2,3
+```
 
 ## 🤝 Acknowledgments
 
