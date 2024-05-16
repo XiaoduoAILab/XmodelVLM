@@ -64,9 +64,10 @@ The training process of Xmodel_VLM is divided into two stages:
 
 
 
-
 #### 1️⃣ Prepare Xmodel_VLM checkpoints
+
 Please firstly download MobileLLaMA chatbot checkpoints from [huggingface website](https://huggingface.co/XiaoduoAILab/Xmodel_VLM)
+
 #### 2️⃣ Prepare data
 
 #### 3️⃣ Run everything with one click!
@@ -74,7 +75,20 @@ Please firstly download MobileLLaMA chatbot checkpoints from [huggingface websit
 
 ## 🤝 Acknowledgments
 
-
+- [LLaVA](https://github.com/haotian-liu/LLaVA): Thanks for their wonderful work! 👏
+- [MobileVLM](https://github.com/Meituan-AutoML/MobileVLM): Thanks for their wonderful work! 👏
+  
 ## ✏️ Reference
 
+If you find Xmodel_VLM useful in your research or applications, please consider giving a star ⭐ and citing using the following BibTeX:
 
+'''
+@misc{xu2024xmodelvlm,
+      title={Xmodel-VLM: A Simple Baseline for Multimodal Vision Language Model}, 
+      author={Wanting Xu and Yang Liu and Langping He and Xucheng Huang and Ling Jiang},
+      year={2024},
+      eprint={2405.09215},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+'''
