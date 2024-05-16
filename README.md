@@ -42,12 +42,26 @@ python inference.py
 ## 🪜 Step-by-step Tutorial
 
 ### Xmodel_VLM
-The training process of Xmodel_VLM is divided into two stages:
+The overall architecture of our network, closely mirrors that of LLaVA-1.5. It consists of three key components: 
+* a vision encoder (CLIP ViT-L/14)
+* a lightweight languagemodel (LLM)
+* a projector responsible for aligning the visual and textual spaces (XDP)
+Refer to [our paper](https://arxiv.org/pdf/2405.09215) for more details!  
+![assets/model archtecture.jpeg](https://github.com/XiaoduoAILab/XmodelVLM/blob/main/assets/model%20archtecture.jpeg)  
+![assets/XDP.jpeg](https://github.com/XiaoduoAILab/XmodelVLM/blob/main/assets/XDP.jpeg)
+
+
+
+
+The training process of Xmodel_VLM is divided into two stages: 
 
 - stage I: pre-training
   - ❄️ frozen vision encoder + 🔥 **learnable** XDP projector + ❄️ **learnable** LLM
 - stage II: multi-task training
   - ❄️ frozen vision encoder + 🔥 **learnable** XDP projector + 🔥 **learnable** LLM
+![https://github.com/XiaoduoAILab/XmodelVLM/tree/main/assets/training strategy.jpeg](https://github.com/XiaoduoAILab/XmodelVLM/blob/main/assets/training%20strategy.jpeg)
+
+
 
 
 #### 1️⃣ Prepare Xmodel_VLM checkpoints
