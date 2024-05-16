@@ -58,7 +58,7 @@ def inference_once(args):
     print(f"🚀 {model_name}: {outputs.strip()}\n")
 if __name__ == '__main__':
    model_path = "Xmodel_VLM/xmodelvlm_1.1b" # model weight file
-   image_file = "assets/samples/demo.jpg"
+   image_file = "assets/demo.jpg"
    prompt_str = "Who is the author of this book?\nAnswer the question using a single word or phrase."
    # (or) What is the title of this book?
    # (or) Is this book related to Education & Teaching?
