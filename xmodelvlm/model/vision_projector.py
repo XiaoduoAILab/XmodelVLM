@@ -34,12 +34,13 @@ def build_vision_projector(config, delay_load=False, **kwargs):
                 modules.append(nn.Linear(config.hidden_size, config.hidden_size))
             return nn.Sequential(*modules)
     elif projector_type.startswith('xdpnet'):
-        xdp_factor_match = re.match(r'^xdpnetv10_(\d+)$', projector_type)
+        return XDPNetProjector(config, factor=1)
+        '''xdp_factor_match = re.match(r'^xdpnetv10_(\d+)$', projector_type)
         if xdp_factor_match:
             factor = int(xdp_factor_match.group(1))
             return XDPNetProjector(config, factor=factor)
         else:
-            return XDPNetProjector(config)
+            return XDPNetProjector(config)'''
 
     raise ValueError(f'Unknown projector type: {projector_type}')
 
