@@ -71,7 +71,7 @@ Please firstly download MobileLLaMA chatbot checkpoints from [huggingface websit
 #### 2️⃣ Prepare data
 
 - prepare benchmark data
-  - We evaluate models on a diverse set of 6 benchmarks, *i.e.* GQA, MMBench, MMBench-cn, MME, POPE, SQA, TextVQA, VizWiz, MM-Vet.  For example, you should follow these instructions to manage the datasets:
+  - We evaluate models on a diverse set of 9 benchmarks, *i.e.* GQA, MMBench, MMBench-cn, MME, POPE, SQA, TextVQA, VizWiz, MM-Vet.  For example, you should follow these instructions to manage the datasets:
   - <details>
     <summary> Data Download Instructions </summary>
 
