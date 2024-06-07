@@ -66,7 +66,7 @@ The training process of Xmodel_VLM is divided into two stages as shown in Figure
 
 #### 1️⃣ Prepare Xmodel_VLM checkpoints
 
-Please firstly download MobileLLaMA chatbot checkpoints from [huggingface website](https://huggingface.co/XiaoduoAILab/Xmodel_VLM)
+Please firstly download Xmodel_VLM checkpoints from [huggingface website](https://huggingface.co/XiaoduoAILab/Xmodel_VLM) (Prepare the visual encoder, such as [Clip](https://huggingface.co/openai/clip-vit-large-patch14-336))
 
 #### 2️⃣ Prepare data
 
