@@ -44,7 +44,7 @@ python inference.py
 ### Xmodel_VLM
 The overall architecture of our network, closely mirrors that of LLaVA-1.5. It consists of three key components: 
 * a vision encoder (CLIP ViT-L/14)
-* a lightweight languagemodel ((Xmodel_LM)[https://github.com/XiaoduoAILab/XmodelLM])
+* a lightweight languagemodel ([Xmodel_LM-1.1B](https://github.com/XiaoduoAILab/XmodelLM))
 * a projector responsible for aligning the visual and textual spaces (XDP)
   
 Refer to [our paper](https://arxiv.org/pdf/2405.09215) for more details!  
