@@ -38,6 +38,7 @@ Xmodel_VLM: A Simple Baseline for Multimodal Vision Language Model
 ```bash
 python inference.py
 ```
+**Tips**:  However, please make sure that you are using the latest code and related virtual environments. (Include [checkpoint](https://huggingface.co/XiaoduoAILab/Xmodel_VLM), [vision encoder](https://huggingface.co/openai/clip-vit-large-patch14-336) and relevant file path in [config.json](https://huggingface.co/XiaoduoAILab/Xmodel_VLM/blob/main/config.json))
 
 ## 🪜 Step-by-step Tutorial
 
