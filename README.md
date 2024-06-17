@@ -94,8 +94,7 @@ Please firstly download Xmodel_VLM checkpoints from [huggingface website](https:
     - textvqa
       - download images following the instructions [here](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip).
       - `cd ${bmk_dir}/textvqa && ln -s /path/to/textvqa/train_images train_images`
-    - mmbench
-      - no action is needed.
+
 
     </details>
 
