@@ -100,7 +100,7 @@ Please firstly download Xmodel_VLM checkpoints from [huggingface website](https:
 
 
 #### 3️⃣ Run everything with one click!
-We provide detailed pre-training, fine-tuning and testing shell scripts, for example:
+We provide detailed pre-training, fine-tuning and testing shell scripts (you only need to modify the corresponding model and data path), for example:
 ```shell
 bash scripts/pretrain.sh 0,1,2,3  #GPU:0,1,2,3
 ```
